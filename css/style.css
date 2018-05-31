@@ -1,0 +1,382 @@
+/*
+*************************
+	SETUP
+*************************
+*/
+
+html, body, section, div, header, footer
+{
+	height: 100%;
+	width: 100%;
+}
+
+/* Box Model Hack - I DONT REMEMBER WHAT THIS DOES, JUST THAT I AM SUPPOSED TO ADD IT */
+*
+{
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear Fix Hack - I DONT REMEMBER WHAT THIS DOES, JUST THAT I AM SUPPOSED TO ADD IT */
+.clearfix:after
+{
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/*
+*************************
+	BASE STYLING
+*************************
+*/
+
+body
+{
+	background: #1c1c1c;
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Tajawal', sans-serif;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/*
+*************************
+	OVERALL STYLING
+*************************
+*/
+
+/* TOP NAV */
+
+header
+{
+	height: 7.4%;
+	width: 100%;
+	background: #fff;
+	padding: 1.5%;
+	color: dimgrey;
+}
+
+header div a
+{
+	padding: 20px;
+	color: #747777;
+}
+
+#topname
+{
+	font-size: 23.5px;
+	padding: 0;
+}
+
+header div nav
+{
+	float: right;
+}
+
+header div nav ul li
+{
+	font-size: 16px;
+	display: inline-block;
+}
+
+.underlined
+{
+	text-decoration: underline;
+}
+
+/* BOTTOM NAV */
+
+footer
+{
+	width: 100%;
+	height: 7.3%;
+
+	position: fixed;
+
+	background: #fff;
+	color: dimgrey;
+}
+
+footer ul
+{
+	padding-top: 9px;
+	text-align: center;
+}
+
+footer ul li
+{
+	display: inline-block;
+}
+
+footer img
+{
+	height: 33.32%;
+	width: 33.32%;
+}
+
+/*
+*************************
+	HOME PAGE STYLING
+*************************
+*/
+
+#projquickview
+{
+	word-spacing: 0;
+	line-height: 0;
+	width: 100%;
+	height: 85.4%;
+}
+
+#projquickview div
+{
+	float: left;
+	height: 50%;
+	width: 33.33%;
+	background: black;
+	overflow: hidden;
+}
+
+#project1, #project2, #project3, #project4, #project5, #project6
+{
+	height: 100%;
+	width: 100%;
+	transition: width 1s, height 1s, transform 1s;
+}
+
+.container
+{
+	position: relative;
+	text-align: center;
+}
+
+.hide
+{
+	display: none;
+}
+
+.imgText1
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+	transition: font-size 0.5s;
+}
+
+.imgText2
+{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+	transition: font-size 0.5s;
+}
+
+.tinted
+{
+	opacity: 0.35;
+	transition: opacity 0.1s;
+}
+
+/*
+*************************
+	ABOUT PAGE STYLING
+*************************
+*/
+
+#about
+{
+	width: 100%;
+	height: 82.15%;
+
+	margin-top: 30px;
+}
+
+#about img
+{
+	height: 555px;
+	width: 370px;
+	float: left;
+	margin-left: 4%;
+	margin-top: 5%;
+	box-shadow: 0px 0px 10px 5px #1F1E1E;
+}
+
+#about div
+{
+	width: 65%;
+	margin-left: 31%;
+	text-align: right;
+	overflow: scroll;
+}
+
+#about div p
+{
+	margin-top: 30px;
+	line-height: 45px;
+	font-size: 22px;
+}
+
+
+
+/*
+*************************
+	PROJECTS PAGE STYLING
+*************************
+*/
+
+#projectList
+{
+	width: 100%;
+	height: 79%;
+
+	margin-top: 60px;
+}
+
+#projectList div
+{
+	width: 80%;
+}
+
+#projectList div h3
+{
+	font-size: 19px;
+	color: #fff;
+	margin-left: 2%;
+}
+
+#projectList div ul
+{
+	margin-top: 35px;
+	width: 100%;
+}
+
+#projectList div ul div
+{
+	margin-bottom: 25px;
+	margin-left: 5%;
+}
+
+#projectList div ul div a
+{
+	color: #fff;
+	font-size: 23px;
+}
+
+#projectList div ul div a li
+{
+	height: 25px;
+	width: 160px;
+}
+
+#projectList div ul div a li span
+{
+	font-size: 23px;
+}
+
+#projectList div ul div a li span:last-child
+{
+	font-weight: 700;
+}
+
+#projectList div ul div p
+{
+	font-size: 19px;
+	color: dimgrey;
+	margin-left: 5%;
+	margin-top: 10px;
+	line-height: 23px;
+}
+
+#projImages1, #projImages2
+{
+	margin-left: 40%;
+	width: 10%;
+	height: 10%;
+}
+
+#projImages1 img, #projImages2 img
+{
+	float: right;
+	margin: 0px 0px 0px 71.5%;
+	position: absolute;
+	height: 27%;
+	width: 17%;
+	box-shadow: 0px 0px 10px 5px #262525;
+}
+
+/*
+*************************
+	RESUMé PAGE STYLING
+*************************
+*/
+
+#resume
+{
+	width: 100%;
+	height: 84.3%;
+
+	margin-top: 10px;
+}
+
+#resume h2:first-child
+{
+	text-align: right;
+}
+
+#resume h2 a
+{
+	text-decoration: none;
+	color: dimgrey;
+	font-size: 16px;
+	margin-right: 20px;
+	font-weight: 500;
+}
+
+#resume h2 a:hover
+{
+	color: #fff;
+}
+
+#resume div
+{
+	width: 75%;
+	margin-left: 10.5%;
+}
+
+#resume div h1
+{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 23px;
+}
+
+#resume div h2
+{
+	margin-left: 35px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	font-size: 21px;
+	font-weight: 700;
+	color: dimgrey;
+}
+
+#resume div h3
+{
+	margin-left: 35px;
+	margin-bottom: 70px;
+	font-size: 20px;
+	color: dimgrey;
+}

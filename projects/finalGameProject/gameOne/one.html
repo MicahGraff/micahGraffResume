@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Script Gaming | Snake</title>
+
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+<body>
+	<header class="clearfix">
+		<h1><a href="../../../index.html" id="returnLink">RETURN TO MAIN SITE</a></h1>
+		<a href="../index.html"><img id="siteLogo" src="../images/transparentLogo.gif" alt="logo"></a>
+		<div class="dropdown" id="hamburger">
+			<input type="image" id="hamburger-img" class="dropbtn" src="../images/hamburger_menu.png" alt="Menu">
+			<div class="dropdown-content">
+				<a href="../index.html">Home</a>
+				<a href="#">Snake Game</a>
+				<a href="../gameTwo/two.html">Tic Tac Toe</a>
+			</div>
+		</div>
+	</header>
+
+	<div id="snake-console" class="clearfix">
+		<p class="responsive-hide">Use the arrow keys to move</p>
+		<p class="responsive-hide">Press "P" to pause</p>
+		<input id="new-game" type="submit" value="New Game">
+		<input id="play-again" class="hide" type="submit" value="Play Again">
+		<p id="score-result"></p>
+	</div>
+
+	<div id="error-message" class="hide">
+		<span>We apologize, but this game is not supported on a browser size this small.</span>
+	</div>
+
+	<canvas id="canvas" width="600" height="600"></canvas>
+	
+	<footer class="clear">
+		<span>Website and Games created by Micah Graff | <a href="http://www.jorgengraff.com/" target="_blank">MicahGraff.com</a></span>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Script Gaming | Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+<body>
+	<header class="clearfix">
+		<h1><a href="../../../index.html" id="returnLink">RETURN TO MAIN SITE</a></h1>
+		<a href="../index.html"><img id="siteLogo" src="../images/transparentLogo.gif" alt="logo"></a>
+		<div class="dropdown" id="hamburger">
+			<input type="image" id="hamburger-img" class="dropbtn" src="../images/hamburger_menu.png" alt="Menu">
+			<div class="dropdown-content">
+				<a href="../index.html">Home</a>
+				<a href="../gameOne/one.html">Snake Game</a>
+				<a href="#">Tic Tac Toe</a>
+			</div>
+		</div>
+	</header>
+
+	<div id="tictactoe-console">
+		<p>Click any tile to start game.</p>
+		<input id="restart-game" type="submit" value="New Game">
+		<input id="easy-mode" class="selected" type="submit" value="Easy Mode">
+		<input id="hard-mode" type="submit" value="Hard Mode">
+		<p id="warningLine">Warning: Choosing a different difficulty restarts game.</p>
+	</div>
+	
+	<div id="tictactoe-board" class="clearfix">
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+		<div><img class="hide" src="../images/tictactoe-x.png" alt="X"><img class="hide" src="../images/tictactoe-o.png" alt="O"></div>
+	</div>
+
+
+	<footer class="clear">
+		<span>Website and Games created by Micah Graff | <a href="http://www.jorgengraff.com/" target="_blank">MicahGraff.com</a></span>
+		<h1><a href="../../../index.html">RETURN TO MAIN SITE</a></h1>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.openclose {
+    float: right;
+    font-size: 26px;
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+html {
+	height: 100%;
+}
+
+header {
+     background-color: #444;
+     -webkit-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.75);
+     padding-top: 10px;
+}
+
+#returnLink {
+  font-family: 'Open Sans';
+  text-decoration: none;
+  color: #ccc;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+#returnLink:hover {
+  text-decoration: underline;
+}
+
+#siteLogo {
+     width: 100px;
+     height: 100px;
+     border: 3px solid black;
+     border-radius: 200px;
+     margin: 10px;
+     /*background: linear-gradient(to bottom, #a53024 0%, #db5042 100%);*/
+     background-color: #ccc;
+}
+
+#hamburger {
+     margin-right: 40px;
+     margin-top: 25px;
+     float: right;
+}
+
+#hamburger-img {
+     height: 80px;
+     width: 80px;
+}
+
+body {
+	/*background: linear-gradient(to bottom, #a53024 0%, #db5042 100%);*/
+    background-color: #ccc;
+}
+
+#snake-console {
+     float: left;
+     margin-top: 250px;
+     margin-left: 50px;
+     height: 10px;
+     overflow: none;
+}
+
+#snake-console p {
+     margin-bottom: 20px;
+     font-size: 22px;
+}
+
+#snake-console input {
+     margin-bottom: 20px;
+}
+
+#canvas {
+     float: right;
+     border: 2px solid black;
+     margin-top: 45px;
+     margin-right: 31%;
+}
+
+footer {
+    padding: 50px;
+	text-align: center;
+}
+
+footer span {
+	font-size: 14px;
+}
+
+footer h1 {
+    margin-top: 50px;
+}
+
+footer h1 a {
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica;
+}
+
+footer h1 a:hover {
+    text-decoration: underline;
+}
+
+
+/*//////*/
+/*LAPTOP*/
+/*//////*/
+@media (max-width: 1381px) {
+    #canvas {
+        margin-right: 250px;
+    }
+
+    #snake-console {
+
+    }
+}
+
+/*//////*/
+/*TABLET*/
+/*//////*/
+@media (max-width: 1250px) {
+    #canvas {
+        margin-right: 140px;
+    }
+
+    #snake-console {
+        font-size: 20px;
+    }
+}
+
+/*/////*/
+/*PHONE*/
+/*/////*/
+@media (max-width: 1143px) {
+    #canvas {
+        margin-right: 40px;
+    }
+
+    #snake-console {
+        font-style: 17px;
+    }
+}
+
+@media (max-width: 1041px) {
+    #canvas {
+        margin-right: 10px;
+    }
+
+    #snake-console {
+        font-style: 14px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 854px) {
+    #canvas {
+        margin-right: 5px;
+    }
+
+    #snake-console {
+        font-style: 12px;
+        width: 170px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 784px) {
+    #canvas {
+        margin-right: 2px;
+    }
+
+    #snake-console {
+        font-style: 10px;
+        width: 150px;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 758px) {
+    #canvas {
+        display: none;
+    }
+
+    #snake-console {
+        display: none;
+    }
+
+    #error-message {
+        margin: 0 10px 350px 10px;
+        margin-top: 250px;
+        display: block;
+        text-align: center;
+    }
+
+    #error-message span {
+        font-size: 24px;
+    }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ccc}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    border: 1px solid black;
+}
